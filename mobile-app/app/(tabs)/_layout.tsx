@@ -2,7 +2,6 @@ import React from "react";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Link, Tabs } from "expo-router";
 import { Pressable } from "react-native";
-
 import Colors from "@/constants/Colors";
 import { useColorScheme } from "@/components/useColorScheme";
 import { useClientOnlyValue } from "@/components/useClientOnlyValue";
@@ -31,7 +30,7 @@ export default function TabLayout() {
 				name="Home"
 				options={{
 					title: "Home",
-					tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+					tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
 					headerRight: () => (
 						<Link href="/modal" asChild>
 							<Pressable>
@@ -49,10 +48,17 @@ export default function TabLayout() {
 				}}
 			/>
 			<Tabs.Screen
+				name="Events"
+				options={{
+					title: "Events",
+					tabBarIcon: ({ color }) => <TabBarIcon name="calendar" color={color} />,
+				}}
+			/>
+			<Tabs.Screen
 				name="Profile"
 				options={{
 					title: "Profile",
-					tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+					tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
 				}}
 			/>
 		</Tabs>
