@@ -93,33 +93,59 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
 
-### Web app
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Softwares needed: npm, expo, expo app on your mobile device
 
 -   npm
     ```sh
     npm install npm@latest -g
     ```
+-   expo
+    ```sh
+    npm install -g expo-cli
+    ```
+-   expo on mobile download from app store
 
 ### Installation
 
 <!-- 1. Get a free API Key at [https://example.com](https://example.com) -->
 
-2. Clone the repo
+1. Clone the repo
     ```sh
     git clone https://github.com/benlow22/floxapp.git
+    ```
+
+### Web app
+
+2. Move to web app directory
+    ```sh
+    cd web-app
     ```
 3. Install NPM packages
     ```sh
     npm install
     ```
-4. Enter your API in `config.js`
+4. Run program
     ```sh
     npm run start
     ```
+
+### Mobile app
+
+2. Move to mobile app directory
+    ```sh
+    cd mobile-app
+    ```
+3. Install NPM packages
+    ```sh
+    npm install
+    ```
+4. Run program
+    ```sh
+    npm start
+    ```
+5. Scan the QR code in the terminal <img src="/images/expo-mobile-qr.png" alt="Logo">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
