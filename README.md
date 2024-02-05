@@ -25,7 +25,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://stock.adobe.com/Download/Watermarked/29807866" alt="Logo" width="80" height="80">
+    <img src="/images/dove.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">FLOX</h3>
@@ -137,15 +137,11 @@ Softwares needed: npm, expo, expo app on your mobile device
     ```sh
     cd mobile-app
     ```
-3. Install NPM packages
-    ```sh
-    npm install
-    ```
-4. Run program
+3. Run program
     ```sh
     npm start
     ```
-5. Scan the QR code in the terminal <img src="/images/expo-mobile-qr.png" alt="Logo">
+4. Scan the QR code in the terminal <img src="/images/expo-mobile-qr.png" alt="Logo">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
