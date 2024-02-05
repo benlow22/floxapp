@@ -1,0 +1,41 @@
+nav {
+	width: 100%;
+	display: flex;
+	background-color: green;
+	height: 2.1rem;
+}
+.hamburger-menu-placeholder {
+	position: absolute;
+	padding: 0.4rem 0.5rem 0.5rem;
+	background-color: var(--secondary-active-menu-color);
+	color: var(--primary-font-color);
+}
+
+.navlinks {
+	display: flex;
+	justify-content: space-between;
+	max-width: 600px;
+	min-width: 400px;
+	margin: auto;
+}
+.navlink {
+	padding: 0.1rem 0.1rem 0.2rem;
+	margin: 0.2rem;
+	text-decoration: none;
+	width: 80px;
+	text-align: center;
+	color: var(--primary-font-color);
+}
+
+.navlink:hover {
+	color: black;
+}
+
+.navlink.active {
+	background-color: var(--secondary-active-menu-color);
+	border-radius: 5px;
+}
+
+.navlink.active:hover {
+	color: var(--primary-font-color);
+}

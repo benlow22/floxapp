@@ -1,0 +1,21 @@
+{
+	"fams": [
+		{
+			"id": "asdfasdf",
+			"name": "Bananafam",
+			"members": ["userID1", "userID2", "userID3", "userID4"],
+			"createdDate": "2023-1-02",
+			"admin": ["userID1", "userID3"],
+			"privateEvents": [
+				{
+					"name": "Aries Agenda",
+					"id": "Event111111"
+				},
+				{
+					"name": "Pre-EDC Dinner",
+					"id": "Event222222"
+				}
+			]
+		}
+	]
+}

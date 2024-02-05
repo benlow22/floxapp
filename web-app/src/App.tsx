@@ -1,0 +1,33 @@
+import React from "react";
+import "./App.css";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import FamsPage from "./pages/FamsPage";
+import EventsPage from "./pages/EventsPage";
+import ChatsPage from "./pages/ChatsPage";
+import HelpPage from "./pages/HelpPage";
+import UserProfilePage from "./pages/UserProfilePage";
+import LoginPage from "./pages/LoginPage";
+import { Main } from "./components/Main";
+import { CreateEventPage } from "./pages/CreateEventPage";
+
+const App: React.FC = () => (
+	<Router>
+		<Routes>
+			<Route path="/" element={<Main />}>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/fams" element={<FamsPage />} />
+				<Route path="/events" element={<EventsPage />} />
+				<Route path="/chats" element={<ChatsPage />} />
+				<Route path="/help" element={<HelpPage />} />
+				<Route path="/:username" element={<UserProfilePage />} />
+				<Route path="/login" element={<LoginPage />} />
+				<Route path="/createEvent" element={<CreateEventPage />} />
+			</Route>
+			{/* <Route path="users/:id" element={<Users />} /> */}
+		</Routes>
+	</Router>
+);
+
+export default App;
