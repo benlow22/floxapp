@@ -9,13 +9,22 @@ import { AuthContext } from "../context/AuthContext";
 import { LoginScreen } from "../screens/LoginScreen";
 import { HomeScreen } from "../screens/HomeScreen";
 import { BottomTabNav } from "./BottomTabNavigator";
+import { Button } from "react-native";
 
 export const AppNavigator = () => {
-	const { isLoggedIn } = useContext(AuthContext);
+	const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
 	return (
 		<Stack.Navigator>
 			{isLoggedIn ? (
-				<Stack.Screen name="Flox" component={BottomTabNav} />
+				<Stack.Screen
+					name="Flox"
+					component={BottomTabNav}
+					options={{
+						headerRight: () => (
+							<Button onPress={() => setIsLoggedIn(false)} title="Logout" />
+						),
+					}}
+				/>
 			) : (
 				<Stack.Screen name="Login" component={LoginScreen} />
 			)}
