@@ -4,15 +4,17 @@
 
 import { createStackNavigator } from "@react-navigation/stack";
 const Stack = createStackNavigator();
-import React, { createContext, useContext, useState } from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
+import { LoginScreen } from "../screens/LoginScreen";
+import { HomeScreen } from "../screens/HomeScreen";
 
 export const AppNavigator = () => {
-	const { hasUser } = useContext(AuthContext);
-
+	const { isLoggedIn } = useContext(AuthContext);
 	return (
 		<Stack.Navigator>
-			{hasUser ? (
-				<Stack.Screen name="Feed" component={FeedScreen} />
+			{isLoggedIn ? (
+				<Stack.Screen name="Home" component={HomeScreen} />
 			) : (
 				<Stack.Screen name="Login" component={LoginScreen} />
 			)}

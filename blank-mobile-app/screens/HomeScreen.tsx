@@ -1,24 +1,17 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 import { AuthContext } from "../context/AuthContext";
 
-export const LoginScreen = () => {
+export const HomeScreen = () => {
 	const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
 
 	return (
 		<View style={styles.layout}>
-			<Text style={styles.title}>Welcome to Flox</Text>
+			<Text style={styles.title}>Home Page</Text>
 			<Button
-				title="login here"
+				title="Log out"
 				onPress={() => {
-					setIsLoggedIn(true);
-				}}
-			/>
-			<Text style={styles.p}>Don't have an account?</Text>
-			<Button
-				title="Sign up here "
-				onPress={() => {
-					setIsLoggedIn(true);
+					setIsLoggedIn(false);
 				}}
 			/>
 		</View>
