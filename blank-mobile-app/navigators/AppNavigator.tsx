@@ -8,13 +8,14 @@ import React, { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { LoginScreen } from "../screens/LoginScreen";
 import { HomeScreen } from "../screens/HomeScreen";
+import { BottomTabNav } from "./BottomTabNavigator";
 
 export const AppNavigator = () => {
 	const { isLoggedIn } = useContext(AuthContext);
 	return (
 		<Stack.Navigator>
 			{isLoggedIn ? (
-				<Stack.Screen name="Home" component={HomeScreen} />
+				<Stack.Screen name="Flox" component={BottomTabNav} />
 			) : (
 				<Stack.Screen name="Login" component={LoginScreen} />
 			)}
