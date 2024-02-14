@@ -1,7 +1,6 @@
 // once logged in, create bottom tabs for Feed, Events, Profile...
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { TestScreen } from "../screens/testScreen";
 import { EventsTab } from "../tab/Events";
 import { FeedTab } from "../tab/Feed";
 import { ProfileTab } from "../tab/Profile";
