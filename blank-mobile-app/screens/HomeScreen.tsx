@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 import { AuthContext } from "../context/AuthContext";
+import { Feed } from "./Feed";
 
 export const HomeScreen = () => {
 	const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
@@ -14,6 +15,7 @@ export const HomeScreen = () => {
 					setIsLoggedIn(false);
 				}}
 			/>
+			<Feed />
 		</View>
 	);
 };
