@@ -5,7 +5,7 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import React, { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { WelcomeScreen } from "../screens/IntroScreen";
+import { WelcomeScreen } from "../screens/WelcomeScreen";
 import { BottomTabNav } from "./BottomTabNavigator";
 import { Button } from "react-native";
 import { LoginScreen } from "../screens/LoginScreen";
