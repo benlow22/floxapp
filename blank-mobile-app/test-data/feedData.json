@@ -1,0 +1,46 @@
+{
+	"data": [
+		{
+			"id": "be606c23-8b79-4777-aff0-0306d777ce7d",
+			"userName": "Tim",
+			"avatarImage": "https://organicfeeds.com/wp-content/uploads/2021/03/How-To-Raise-A-Baby-Duck-scaled-1.jpg",
+			"post": "3 more day's til Fyre Fest!!!",
+			"postImage": ""
+		},
+		{
+			"id": "1f079776-3b01-4871-8cc9-0309ab9f6169",
+			"userName": "Ellison",
+			"avatarImage": "https://cdn.britannica.com/92/100692-050-5B69B59B/Mallard.jpg",
+			"post": "I am a duck",
+			"postImage": "https://unsplash.com/photos/x5oPmHmY3kQ"
+		},
+		{
+			"id": "8ce79a8b-f31e-471f-a536-3054d17e33ea",
+			"userName": "Ellison",
+			"avatarImage": "https://cdn.britannica.com/92/100692-050-5B69B59B/Mallard.jpg",
+			"post": "This is \n \n a long \n \n post to take up space \n    \n \n \n #longggg",
+			"postImage": "https://unsplash.com/photos/x5oPmHmY3kQ"
+		},
+		{
+			"id": "1f079516-3b01-4871-8cc9-0309ab9f6169",
+			"userName": "Blow",
+			"avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg/800px-Anas_platyrhynchos_male_female_quadrat.jpg",
+			"post": "Two ducks",
+			"postImage": "https://unsplash.com/photos/x5oPmHmY3kQ"
+		},
+		{
+			"id": "1f079776-3b01-4871-8999-0309ab9f6169",
+			"userName": "Tim",
+			"avatarImage": "https://organicfeeds.com/wp-content/uploads/2021/03/How-To-Raise-A-Baby-Duck-scaled-1.jpg",
+			"post": "I too am a duck",
+			"postImage": "https://unsplash.com/photos/x5oPmHmY3kQ"
+		},
+		{
+			"id": "1f079776-3b01-4871-8cc9-0309asdf6169",
+			"userName": "Blow",
+			"avatarImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Anas_platyrhynchos_male_female_quadrat.jpg/800px-Anas_platyrhynchos_male_female_quadrat.jpg",
+			"post": "This is \n \n another \n \n long \n \n post to take up space \n    \n \n \n #longggg",
+			"postImage": "https://unsplash.com/photos/x5oPmHmY3kQ"
+		}
+	]
+}
