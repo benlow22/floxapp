@@ -7,11 +7,7 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import userData from "./../test-data/feedData.json";
 
-export const Feed = ({ props }: any) => (
-	<View>
-		<Text>FEEEED</Text>
-	</View>
-);
+export const Feed = ({ props }: any) => <View>{/* <Text>FEEEED</Text> */}</View>;
 
 const styles = StyleSheet.create({
 	avatar: {

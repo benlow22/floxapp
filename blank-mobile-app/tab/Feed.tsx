@@ -1,23 +1,27 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { Feed } from "../screens/Feed";
 import feedData from "../test-data/feedData.json";
 import { FeedCard } from "../components/FeedCard";
+
 export function FeedTab() {
 	return (
-		<View style={styles.container}>
-			<Text style={styles.heading}>Feed </Text>
+		<ScrollView style={styles.container}>
+			<Text style={styles.heading}>Latest Feed </Text>
 			{feedData.data.map((data) => (
-				<FeedCard data={data} />
+				<FeedCard
+					data={data}
+					key={data.id}
+				/>
 			))}
 			<Feed />
-		</View>
+		</ScrollView>
 	);
 }
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		alignItems: "center",
+		// alignItems: "center",
 		// justifyContent: "center",
 		backgroundColor: "#eeeeee",
 	},

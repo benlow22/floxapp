@@ -8,6 +8,7 @@ import { Button, Image, StyleSheet, Text, View } from "react-native";
 import userData from "./../test-data/feedData.json";
 import { Avatar } from "./Avatar";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { ResponseBox } from "./ResponseBox";
 
 export const FeedCard = ({ data }: any) => (
 	<View style={styles.container}>
@@ -21,6 +22,7 @@ export const FeedCard = ({ data }: any) => (
 			/>
 		</View>
 		<Text style={styles.postBody}>{data.post}</Text>
+		<ResponseBox />
 	</View>
 );
 
@@ -28,7 +30,7 @@ const styles = StyleSheet.create({
 	avatar: {
 		borderRadius: 10,
 	},
-	postBody: { marginTop: 15 },
+	postBody: { margin: 15 },
 	ellipsis: { position: "absolute", right: 5, top: 5, color: "#999999" },
 	container: {
 		borderBottomColor: "black",
@@ -36,13 +38,16 @@ const styles = StyleSheet.create({
 		width: "95%",
 		borderRadius: 10,
 		margin: 5,
-		padding: 10,
+		paddingTop: 10,
+		// paddingBottom: 10,
 		borderBottomWidth: 2,
 		backgroundColor: "white",
 	},
 	userData: {
 		flexDirection: "row",
 		alignItems: "center",
+		marginLeft: 10,
+		marginRight: 10,
 	},
 	username: {
 		margin: 10,
