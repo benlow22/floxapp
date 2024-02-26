@@ -6,6 +6,8 @@ import { HomePage } from "./pages/HomePage";
 import FamsPage from "./pages/FamsPage";
 import EventsPage from "./pages/EventsPage";
 import ChatsPage from "./pages/ChatsPage";
+import DiscoverPage from "./pages/DiscoverPage";
+import SearchPage from "./pages/SearchPage";
 import HelpPage from "./pages/HelpPage";
 import UserProfilePage from "./pages/UserProfilePage";
 import LoginPage from "./pages/LoginPage";
@@ -20,8 +22,10 @@ const App: React.FC = () => (
 				<Route path="/fams" element={<FamsPage />} />
 				<Route path="/events" element={<EventsPage />} />
 				<Route path="/chats" element={<ChatsPage />} />
+				<Route path="/discover" element={<DiscoverPage />} />
+				<Route path="/search" element={<SearchPage />} />
 				<Route path="/help" element={<HelpPage />} />
-				<Route path="/:username" element={<UserProfilePage />} />
+				<Route path="/user" element={<UserProfilePage />} />
 				<Route path="/login" element={<LoginPage />} />
 				<Route path="/createEvent" element={<CreateEventPage />} />
 			</Route>

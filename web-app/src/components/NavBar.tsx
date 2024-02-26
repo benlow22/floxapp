@@ -2,6 +2,15 @@ import { NavLink } from "react-router-dom";
 import "./../styles/navbar.css";
 import { MenuOutlined } from "@ant-design/icons";
 export const NavBar = () => {
+	const links = [
+		{ text: "Home", to: "/" },
+		{ text: "Fams", to: "/fams" },
+		{ text: "Events", to: "/events" },
+		{ text: "Chats", to: "/chats" },
+		{ text: "Search", to: "/search" },
+		{ text: "Discover", to: "/discover" },
+		{ text: "Help", to: "/help" }
+	]
 	return (
 		<nav>
 			{/* <h1>Navbar</h1>  */}
@@ -9,21 +18,13 @@ export const NavBar = () => {
 				<MenuOutlined />
 			</div>
 			<div className="navlinks">
-				<NavLink to={"/"} className="navlink">
-					Home
-				</NavLink>
-				<NavLink to={"/fams"} className="navlink">
-					Fams
-				</NavLink>
-				<NavLink to={"/events"} className="navlink">
-					Events
-				</NavLink>
-				<NavLink to={"/chats"} className="navlink">
-					Chats
-				</NavLink>
-				<NavLink to={"/help"} className="navlink">
-					Help
-				</NavLink>
+				{
+					links.map( (link) => {
+						return <NavLink to={link.to} className="navlink">
+							{link.text}
+						</NavLink>
+					})
+				}
 			</div>
 			{/* <NavLink to={"/"}>___</NavLink> */}
 			{/* <NavLink to={"/"}>___</NavLink> */}

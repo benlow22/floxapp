@@ -16,7 +16,9 @@ export const Header = () => {
 				<div className="header-user-info">
 					<h2>{userData.userName}</h2>
 					<BellOutlined className="header-notification-button" />
-					<img src={userData.profilePicURL} className="header-profile-pic" />
+					<Link to="/user">
+						<img src={userData.profilePicURL} className="header-profile-pic" />
+					</Link>
 					{/* make dynamic, log in log out button */}
 					<Link to="/login" className="logout-button">
 						Logout

@@ -47,14 +47,7 @@ export const CreateEventPage = () => {
 					autoComplete="off"
 					form={form}
 				>
-					<h1>Create Event Page</h1>
-					<h3>Event NAme</h3>
-					<h3>start date </h3>
-					<h3>end date </h3>
-					<h3>location </h3>
-					<h3>details </h3>
-					<h3>invites </h3>
-					<h3>Cover image</h3>
+					<h1>Create an Event</h1>
 					<Form.Item label="Event Name" name="name">
 						<Input showCount maxLength={100} />
 					</Form.Item>
