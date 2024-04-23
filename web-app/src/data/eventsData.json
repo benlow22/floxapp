@@ -1,12 +1,22 @@
 [
 	{
 		"id": "b2a16234-7036-49da-a56b-66c7ab3c876e",
-		"eventName": "Kandi Making Party",
-		"location": ""
+		"title": "Kandi Making Party",
+		"location": "",
+		"description": "Let's make some kandi",
+		"startTime": "2024-04-05T04:00:00-0800",
+		"endTime": "2024-04-05T10:00:00-0800",
+		"isDateOnly": false,
+		"guestList": []
 	},
 	{
 		"id": "9215d4b7-fe16-4113-a1bd-9fe23ca78e29",
-		"eventName": "Aries Agenda III",
-		"location": "251 Evergreen Valley Loop Ronald, WA 98940"
+		"title": "Aries Agenda III",
+		"location": "251 Evergreen Valley Loop Ronald, WA 98940",
+		"description": "A long weekend",
+		"startTime": "2024-03-30T04:00:00-0800",
+		"endTime": "2024-04-02T10:00:00-0800",
+		"isDateOnly": true,
+		"guestList": []
 	}
 ]

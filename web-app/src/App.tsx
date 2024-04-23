@@ -13,6 +13,8 @@ import UserProfilePage from "./pages/UserProfilePage";
 import LoginPage from "./pages/LoginPage";
 import { Main } from "./components/Main";
 import { CreateEventPage } from "./pages/CreateEventPage";
+import EventPage from "./pages/EventPage";
+import EventChats from "./pages/EventChats";
 
 const App: React.FC = () => (
 	<Router>
@@ -28,6 +30,11 @@ const App: React.FC = () => (
 				<Route path="/user" element={<UserProfilePage />} />
 				<Route path="/login" element={<LoginPage />} />
 				<Route path="/createEvent" element={<CreateEventPage />} />
+
+				{/* Event pages */}
+
+				<Route path="/event/:eventId" element={<EventPage />} />
+				<Route path="/event/:eventId/chats" element={<EventChats />} />
 			</Route>
 			{/* <Route path="users/:id" element={<Users />} /> */}
 		</Routes>

@@ -20,7 +20,7 @@ export const NavBar = () => {
 			<div className="navlinks">
 				{
 					links.map( (link) => {
-						return <NavLink to={link.to} className="navlink">
+						return <NavLink to={link.to} className="navlink" key={link.text}>
 							{link.text}
 						</NavLink>
 					})
