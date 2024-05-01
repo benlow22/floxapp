@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { event } from "../../types/types";
 
-export const Login = () => {
+type TProps = {
+	onFormSwitch: (formName: "login" | "register") => any;
+};
+export const Login = ({ onFormSwitch }: TProps) => {
 	const [email, setEmail] = useState<string>("");
 	const [password, setPassword] = useState<string>("");
 
@@ -33,7 +36,9 @@ export const Login = () => {
 				/>
 				<button type="submit">Login</button>
 			</form>
-			<button>Don't have an account? Register here.</button>
+			<button onClick={() => onFormSwitch("register")}>
+				Don't have an account? Register here.
+			</button>
 		</>
 	);
 };
