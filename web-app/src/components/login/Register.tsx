@@ -15,9 +15,34 @@ export const Register = ({ onFormSwitch }: TProps) => {
 		console.log("EMAIL,", email, "pass", password);
 	};
 	return (
-		<>
-			<>Register</>
-			<form onSubmit={(e: React.FormEvent) => handleSubmit(e)}>
+		<div className="auth-form">
+			<h2>Register</h2>
+			<p>Create a new account</p>
+			<button className="oauth-button">
+				<img
+					src="./googleIcon.png"
+					className="oauth-icon"
+				/>
+				Sign in with Google
+			</button>
+			<button className="oauth-button">
+				<img
+					src="./appleIcon.png"
+					className="oauth-icon"
+				/>
+				Sign in with Apple
+			</button>
+			<div className="auth-divider">
+				<div className="line-seperator"></div>
+				<div>
+					<p>or</p>
+				</div>
+				<div className="line-seperator"></div>
+			</div>
+			<form
+				className="register-form"
+				onSubmit={(e: React.FormEvent) => handleSubmit(e)}
+			>
 				<label htmlFor="email">Email : </label>
 				<input
 					type="email"
@@ -36,19 +61,19 @@ export const Register = ({ onFormSwitch }: TProps) => {
 					value={password}
 					onChange={(e) => setPassword(e.target.value)}
 				/>
-				<input
-					type="password"
-					placeholder="**********"
-					id="password"
-					name="password"
-					value={password}
-					onChange={(e) => setPassword(e.target.value)}
-				/>
-				<button type="submit">Login</button>
+				<button
+					type="submit"
+					className="register-button"
+				>
+					Register
+				</button>
 			</form>
-			<button onClick={() => onFormSwitch("login")}>
+			<button
+				onClick={() => onFormSwitch("login")}
+				className="link-button"
+			>
 				Already have an account? Login here.
 			</button>
-		</>
+		</div>
 	);
 };
