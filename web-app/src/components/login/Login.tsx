@@ -1,5 +1,11 @@
+/* Things to add 
+- forgot password link
+- other Oauths
+- ??? maybe have - continue without logging in, for view only events or posts??? 
+
+*/
+
 import { useState } from "react";
-import { event } from "../../types/types";
 
 type TProps = {
 	onFormSwitch: (formName: "login" | "register") => any;

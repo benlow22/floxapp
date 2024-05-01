@@ -1,3 +1,6 @@
+/*Things to add
+- second password pop up for confirmation
+- validation checks and ui for that (8 characters, #, no spaces, must match) */
 import { useState } from "react";
 
 type TProps = {
@@ -65,7 +68,7 @@ export const Register = ({ onFormSwitch }: TProps) => {
 					type="submit"
 					className="register-button"
 				>
-					Register
+					Sign up
 				</button>
 			</form>
 			<button
